@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Development Challenge</title>
+</head>
+
+<body>
+    <div id="contest">
+        <h1 >CodeRush Website Development Contest </h1>
+        <h1 >(SpriteEra)</h1>
+        <h2>Contest Theme : </h2>
+        <h2>Interactive Quiz page with timer</h2>
+    </div>
+    <div id="page1">    
+        <button onclick="showPage2()">Start Contest</button>
+    </div>
+
+    <div id="page2" style="display: none;">
+        <div id="question-container">
+            <h2>Main Question Page</h2>
+            <div id="timer">5:00</div>
+
+            <!--Question 1-->
+            <div class="question">
+                <p>Question 1: What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="Paris"> Paris</label>
+                <label><input type="radio" name="q1" value="Berlin"> Berlin</label>
+                <label><input type="radio" name="q1" value="London"> London</label>
+                <label><input type="radio" name="q1" value="Madrid"> Madrid</label>
+                <label><input type="radio" name="q1" value="Rome"> Rome</label>
+            </div>
+    
+            <!-- Question 2 -->
+            <div class="question">
+                <p>Question 2: Which planet is known as the Red Planet?</p>
+                <label><input type="radio" name="q2" value="Venus"> Venus</label>
+                <label><input type="radio" name="q2" value="Mars"> Mars</label>
+                <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label>
+                <label><input type="radio" name="q2" value="Saturn"> Saturn</label>
+                <label><input type="radio" name="q2" value="Neptune"> Neptune</label>
+            </div>
+    
+            <!-- Question 3 -->
+            <div class="question">
+                <p>Question 3: What is the largest mammal on Earth?</p>
+                <label><input type="radio" name="q3" value="Elephant"> Elephant</label>
+                <label><input type="radio" name="q3" value="Blue Whale"> Blue Whale</label>
+                <label><input type="radio" name="q3" value="Giraffe"> Giraffe</label>
+                <label><input type="radio" name="q3" value="Hippopotamus"> Hippopotamus</label>
+                <label><input type="radio" name="q3" value="Polar Bear"> Polar Bear</label>
+            </div>
+    
+            <!-- Question 4 -->
+            <div class="question">
+                <p>Question 4: Which country is known as the Land of the Rising Sun?</p>
+                <label><input type="radio" name="q4" value="China"> China</label>
+                <label><input type="radio" name="q4" value="Japan"> Japan</label>
+                <label><input type="radio" name="q4" value="South Korea"> South Korea</label>
+                <label><input type="radio" name="q4" value="Vietnam"> Vietnam</label>
+                <label><input type="radio" name="q4" value="Thailand"> Thailand</label>
+            </div>
+    
+            <!-- Question 5 -->
+            <div class="question">
+                <p>Question 5: Who wrote the play 'Romeo and Juliet'?</p>
+                <label><input type="radio" name="q5" value="William Shakespeare"> William Shakespeare</label>
+                <label><input type="radio" name="q5" value="Jane Austen"> Jane Austen</label>
+                <label><input type="radio" name="q5" value="Charles Dickens"> Charles Dickens</label>
+                <label><input type="radio" name="q5" value="Mark Twain"> Mark Twain</label>
+                <label><input type="radio" name="q5" value="Emily Brontë"> Emily Brontë</label>
+            </div>
+    
+
+            <button onclick="submitAnswers()">Submit</button>
+        </div>
+    </div>
+
+    <div id="page3" style="display: none;">
+        <div id="result-container">
+            <h2>Congratulations! Contest Completed</h2>
+            <p>Time taken: <span id="timeTaken"></span></p>
+            <div id="userAnswers"></div>
+        </div>
+    </div>
+    <h2 id="sign">Made By : Prabhat Singh</h2>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
